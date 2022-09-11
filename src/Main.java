@@ -58,6 +58,61 @@ public class Main {
         System.out.println("За 3 дня машина произвела бутылок " + performanceThreeDay + " штук" );
         System.out.println("За 1 месяц машина произвела бутылок " + performanceOneMonth + " штук" );
 
+        System.out.println("Задача 5");
+        short totalCans = 120;
+        int whiteCansPerClass = 2;
+        int brownCansPerClass = 4;
+        int allCansPerClass = whiteCansPerClass + brownCansPerClass;
+        int totalClasses = totalCans / allCansPerClass;
+        int allWhiteBought = totalClasses * whiteCansPerClass;
+        int allBrownBought = totalClasses * brownCansPerClass;
+        System.out.println("В школе, где " + totalClasses + " классов, нужно " + allWhiteBought + " банок белой краски и " + allBrownBought + " банок коричневой краски");
+
+        System.out.println("Задача 6");
+        int oneBanana = 80;
+        int milk100Ml = 105;
+        int twoIceCreams = 2 * 100;
+        int oneEggs = 70;
+        int  recipeInGr = oneBanana * 5 + milk100Ml * 2 + twoIceCreams + oneEggs * 4;
+        int kg = 1000;
+        float recipeInKg = recipeInGr / (float)kg;
+        System.out.println(recipeInKg + " кг");
+
+        System.out.println("Задача 7");
+        int allWeightInKg = 7;
+        int allWeightInGr = 1000 * allWeightInKg;
+        int aGramsPerDay = 250;
+        int bGramsPerDay = 500;
+        int allDays250 = allWeightInGr / aGramsPerDay;
+        int allDays500 = allWeightInGr / bGramsPerDay;
+        int average = (allDays500 + allDays250) / 2;
+        System.out.println(allDays250 + " дней потребуется для похудения, если спортсмен будет терять по 250 грамм в день");
+        System.out.println(allDays500 + " дней потребуется для похудения, если спортсмен будет терять по 500 грамм в день");
+        System.out.println(average + " день может потребоваться в среднем, чтобы добиться результата похудения");
+
+        System.out.println("Задача 8");
+        int allPercent = 100;
+        int upPercent = 10;
+        int marysMonthlySalary = 67760;
+        int mary10Up = (marysMonthlySalary * upPercent) / allPercent + marysMonthlySalary;
+        int denisMonthlySalary = 83690;
+        int denis10Up = (denisMonthlySalary * upPercent) / allPercent + denisMonthlySalary;
+        int kristiMonthlySalary = 76230;
+        int kristi10Up = (kristiMonthlySalary * upPercent) / allPercent + kristiMonthlySalary;
+        int marysYear = marysMonthlySalary * 12;
+        int marysYearUp10 = mary10Up * 12;
+        int differenceMary = marysYearUp10 - marysYear;
+        int denisYear = denisMonthlySalary * 12;
+        int denisYear10Up = denis10Up * 12;
+        int differenceDenis = denisYear10Up - denisYear;
+        int kristiYear = kristiMonthlySalary * 12;
+        int kristiYear10Up = kristi10Up * 12;
+        int differenceKristi = kristiYear10Up - kristiYear;
+
+        System.out.println("Маша теперь получает " + mary10Up + " рублей. Годовой доход вырос на " + differenceMary + " рублей");
+        System.out.println("Денис теперь получает " + denis10Up + " рублей. Годовой доход вырос на " + differenceDenis + " рублей");
+        System.out.println("Кристина теперь получает " + kristi10Up + " рублей. Годовой доход вырос на " + differenceKristi + " рублей");
+
 
 
     }
